@@ -100,6 +100,11 @@ body {
    ============================================
    TODO: Add spacing, borders, and styling
 ============================================ */
+.journal-entry::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
 .journal-entry {
     background-color: #fff;
@@ -108,31 +113,29 @@ body {
     border: 5px solid #80deea;
     border-radius: 5px;
     background-color: #e8fbfb;
-    float: left;
 }
 
-.journal-entry h2{
+.entry-title {
     color: #00838f;
+    margin-bottom: 10px;
+}
+
+.journal-entry hr{
+    color: 80deea;
+    margin-bottom: 10px;
+    height: 4px;
+    background-color: #80deea;
+    border: none;
 }
 
 .entry-image {
-    float: left;
     margin-right: 15px;
     border: 12px solid #fff;
     box-shadow: 0 0 0 2px #333;
     padding: 8px;
     max-width: 40%;
     background: white;
-}
-
-.entry-title {
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.entry-date {
-    color: #888;
-    font-size: 0.9em;
+    float:left;
 }
 
 /* ============================================
