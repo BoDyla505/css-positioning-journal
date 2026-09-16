@@ -1,0 +1,153 @@
+/* ============================================
+   HENRY'S JOURNAL - CSS POSITIONING EXERCISE
+   STARTER TEMPLATE - FILL IN THE BLANKS!
+   ============================================
+   
+   Complete the TODOs below to style the journal.
+   Refer to instructions for detailed guidance.
+   
+   Author: Melvin Dacanay
+   Date: 02/02/2026
+============================================ */
+
+/* ============================================
+   STEP 1: BASE RESET & TYPOGRAPHY
+   ============================================ */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+#main-container {
+    width: 960px;
+    margin: 20px auto;
+    background: white;
+}
+
+/* ============================================
+   STEP 2: MAIN CONTAINER
+   ============================================
+   TODO: Add styles to create:
+   - White background
+   - Max width of 960px
+   - Center it horizontally
+   - Add padding and border radius
+============================================ */
+
+#main-container {
+    /* YOUR CODE HERE */
+    
+}
+
+/* ============================================
+   STEP 3: HEADER STYLING
+   ============================================
+   TODO: Style the header with padding,
+   background color, and text alignment
+============================================ */
+
+#header-box {
+    background-color: #4a90e2;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#header-box h1 {
+    font-size: 2em;
+}
+
+/* ============================================
+   STEP 4: CREATE TWO-COLUMN LAYOUT
+   ============================================
+   TODO: Use float to create sidebar (25%) 
+   and content area (75%)
+============================================ */
+
+#sidebar {
+    float: left;
+    width: 25%;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+#content-area {
+    float: left;
+    width: 75%;
+    padding: 20px;
+}
+
+/* ============================================
+   STEP 5: CLEARFIX FOR PARENT COLLAPSE
+   ============================================
+   TODO: Add clearfix to main-container
+============================================ */
+
+#main-container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* ============================================
+   STEP 6: STYLE JOURNAL ENTRIES
+   ============================================
+   TODO: Add spacing, borders, and styling
+============================================ */
+
+.journal-entry {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.entry-image {
+    float: left;
+    margin-right: 15px;
+    border: 12px solid #fff;
+    box-shadow: 0 0 0 2px #333;
+    padding: 8px;
+    background: white;
+}
+
+.entry-title {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.entry-date {
+    color: #888;
+    font-size: 0.9em;
+}
+
+/* ============================================
+   STEP 7: RESPONSIVE DESIGN
+   ============================================
+   TODO: Make layout stack on mobile
+============================================ */
+
+@media (max-width: 768px) {
+    #main-container {
+        width: 100%;
+        margin: 0;
+    }
+    
+    #sidebar,
+    #content-area {
+        float: none;
+        width: 100%;
+    }
+    
+    #sidebar {
+        margin-bottom: 20px;
+    }
+}
