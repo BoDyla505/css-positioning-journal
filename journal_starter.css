@@ -42,8 +42,7 @@ body {
 ============================================ */
 
 #main-container {
-    /* YOUR CODE HERE */
-    
+    border: #4caf50 solid 10px;
 }
 
 /* ============================================
@@ -79,7 +78,7 @@ body {
 }
 
 #content-area {
-    float: left;
+    float: right;
     width: 75%;
     padding: 20px;
 }
@@ -106,8 +105,14 @@ body {
     background-color: #fff;
     margin-bottom: 20px;
     padding: 15px;
-    border: 1px solid #ddd;
+    border: 5px solid #80deea;
     border-radius: 5px;
+    background-color: #e8fbfb;
+    float: left;
+}
+
+.journal-entry h2{
+    color: #00838f;
 }
 
 .entry-image {
@@ -116,6 +121,7 @@ body {
     border: 12px solid #fff;
     box-shadow: 0 0 0 2px #333;
     padding: 8px;
+    max-width: 40%;
     background: white;
 }
 
