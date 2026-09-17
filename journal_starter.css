@@ -43,7 +43,7 @@ body {
 
 #main-container {
     border: #4caf50 solid 10px;
-       max-width: 800px;
+    max-width: 800px;
     margin: 20px auto;
     padding: 20px;
     background-color: white;
@@ -79,15 +79,48 @@ body {
 
 #sidebar {
     float: left;
-    width: 25%;
+    width: 20%;
     padding: 20px;
     background-color: #f0f0f0;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #78909c;
+    margin-top: 20px;
 }
 
 #content-area {
     float: right;
-    width: 75%;
+    width: 80%;
     padding: 20px;
+}
+
+#sidebar ul{
+    list-style-type: none;
+}
+
+#sidebar hr{
+    padding: .5px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(125, 125, 137);
+}
+
+#sidebar #title-sidebar{
+    padding: .5px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+}
+
+#sidebar h2{
+    color: white;
+}
+
+#sidebar li{
+    color: white;
 }
 
 /* ============================================
@@ -130,7 +163,7 @@ body {
 .journal-entry hr{
     color: 80deea;
     margin-bottom: 10px;
-    height: 4px;
+    height: 2px;
     background-color: #80deea;
     border: none;
 }
@@ -151,12 +184,8 @@ body {
    TODO: Make layout stack on mobile
 ============================================ */
 
-@media (max-width: 768px) {
-    #main-container {
-        width: 100%;
-        margin: 0;
-    }
-    
+@media (max-width: 800px) {
+ 
     #sidebar,
     #content-area {
         float: none;
@@ -166,15 +195,13 @@ body {
     #sidebar {
         margin-bottom: 20px;
     }
+
     .entry-image {
-    margin-right: 15px;
-    border: 12px solid #fff;
-    box-shadow: 0 0 0 2px #333;
-    padding: 8px;
-    max-width: 400px;
-    background: white;
-    float: none;
+        max-width: 350px;
+        align-items: center;
+        float: none;
     }
+
     #main-container {
     width: 95%;
     margin: 20px auto;
@@ -182,20 +209,13 @@ body {
     }
 }
 
-@media (768px <= width <= 960px) {
-    #main-container {
-        width: 100%;
-        margin: 0;
-    }
+@media (800px <= width <= 960px) {
+
     .entry-image {
-    margin-right: 15px;
-    border: 12px solid #fff;
-    box-shadow: 0 0 0 2px #333;
-    padding: 8px;
-    max-width: 200px;
-    background: white;
-    float:right;
+        max-width: 200px;
+        align-items: center
     }
+
     #main-container {
     width: 95%;
     margin: 20px auto;
