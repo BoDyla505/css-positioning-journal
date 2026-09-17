@@ -164,6 +164,8 @@ body {
     #main-container {
         width: 100%;
         margin: 0;
+        padding: 10px;
+        border-width: 5px;
     }
     
     #sidebar,
@@ -175,6 +177,18 @@ body {
     #sidebar {
         margin-bottom: 20px;
     }
+
+    .entry-image {
+        width: 100px;
+    }
+
+    #header-box: after {
+        position: static;
+        display: inline-block;
+        margin-top: 10px;
+        
+    }
+}
     .entry-image {
     margin-right: 15px;
     border: 12px solid #fff;
