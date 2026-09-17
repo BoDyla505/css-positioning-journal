@@ -54,14 +54,23 @@ body {
 ============================================ */
 
 #header-box {
-    background-color: #4a90e2;
-    color: white;
+    background-color: #d5e9ee;
+    color: #1c364c;
     padding: 20px;
     text-align: center;
+    border: 2px solid #db362a;
+    margin-bottom: 15px;
 }
 
 #header-box h1 {
     font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    color: #868484;
+    text-align: right;
+
 }
 
 /* ============================================
