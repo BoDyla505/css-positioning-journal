@@ -133,9 +133,9 @@ body {
     border: 12px solid #fff;
     box-shadow: 0 0 0 2px #333;
     padding: 8px;
-    max-width: 40%;
+    max-width: 200px;
     background: white;
-    float:left;
+    float:right;
 }
 
 /* ============================================
@@ -159,4 +159,40 @@ body {
     #sidebar {
         margin-bottom: 20px;
     }
+    .entry-image {
+    margin-right: 15px;
+    border: 12px solid #fff;
+    box-shadow: 0 0 0 2px #333;
+    padding: 8px;
+    max-width: 400px;
+    background: white;
+    float: none;
+    }
+    #main-container {
+    width: 95%;
+    margin: 20px auto;
+    background: white;
+    }
+}
+
+@media (768px <= width <= 960px) {
+    #main-container {
+        width: 100%;
+        margin: 0;
+    }
+    .entry-image {
+    margin-right: 15px;
+    border: 12px solid #fff;
+    box-shadow: 0 0 0 2px #333;
+    padding: 8px;
+    max-width: 200px;
+    background: white;
+    float:right;
+    }
+    #main-container {
+    width: 95%;
+    margin: 20px auto;
+    background: white;
+    }
+    
 }
