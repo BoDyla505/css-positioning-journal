@@ -42,6 +42,7 @@ body {
 ============================================ */
 
 #main-container {
+    border: #4caf50 solid 10px;
        max-width: 800px;
     margin: 20px auto;
     padding: 20px;
@@ -59,14 +60,23 @@ body {
 ============================================ */
 
 #header-box {
-    background-color: #4a90e2;
-    color: white;
+    background-color: #d5e9ee;
+    color: #1c364c;
     padding: 20px;
     text-align: center;
+    border: 2px solid #db362a;
+    margin-bottom: 15px;
 }
 
 #header-box h1 {
     font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    color: #868484;
+    text-align: right;
+
 }
 
 /* ============================================
@@ -84,7 +94,7 @@ body {
 }
 
 #content-area {
-    float: left;
+    float: right;
     width: 75%;
     padding: 20px;
 }
@@ -106,32 +116,42 @@ body {
    ============================================
    TODO: Add spacing, borders, and styling
 ============================================ */
+.journal-entry::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
 .journal-entry {
     background-color: #fff;
     margin-bottom: 20px;
     padding: 15px;
-    border: 1px solid #ddd;
+    border: 5px solid #80deea;
     border-radius: 5px;
+    background-color: #e8fbfb;
+}
+
+.entry-title {
+    color: #00838f;
+    margin-bottom: 10px;
+}
+
+.journal-entry hr{
+    color: 80deea;
+    margin-bottom: 10px;
+    height: 4px;
+    background-color: #80deea;
+    border: none;
 }
 
 .entry-image {
-    float: left;
     margin-right: 15px;
     border: 12px solid #fff;
     box-shadow: 0 0 0 2px #333;
     padding: 8px;
+    max-width: 200px;
     background: white;
-}
-
-.entry-title {
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.entry-date {
-    color: #888;
-    font-size: 0.9em;
+    float:right;
 }
 
 /* ============================================
@@ -168,4 +188,41 @@ body {
         margin-top: 10px;
         
     }
+}
+    .entry-image {
+    margin-right: 15px;
+    border: 12px solid #fff;
+    box-shadow: 0 0 0 2px #333;
+    padding: 8px;
+    max-width: 400px;
+    background: white;
+    float: none;
+    }
+    #main-container {
+    width: 95%;
+    margin: 20px auto;
+    background: white;
+    }
+}
+
+@media (768px <= width <= 960px) {
+    #main-container {
+        width: 100%;
+        margin: 0;
+    }
+    .entry-image {
+    margin-right: 15px;
+    border: 12px solid #fff;
+    box-shadow: 0 0 0 2px #333;
+    padding: 8px;
+    max-width: 200px;
+    background: white;
+    float:right;
+    }
+    #main-container {
+    width: 95%;
+    margin: 20px auto;
+    background: white;
+    }
+    
 }
