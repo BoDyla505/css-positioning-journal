@@ -42,7 +42,12 @@ body {
 ============================================ */
 
 #main-container {
-    /* YOUR CODE HERE */
+       max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border: 5px solid #4caf50;
+    border-radius: 0px;
     
 }
 
